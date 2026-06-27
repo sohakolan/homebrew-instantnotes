@@ -8,6 +8,7 @@ cask "instant-notes" do
   homepage "https://github.com/sohakolan/InstantNotes"
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "InstantNotes.app"
 
@@ -18,13 +19,11 @@ cask "instant-notes" do
                    args: ["-c", "-r", "#{appdir}/InstantNotes.app"]
   end
 
+  zap trash: "~/Library/Application Support/com.sohane.instantnotes"
+
   caveats <<~EOS
     InstantNotes n'est pas notarisée par Apple. Si macOS affiche encore
     « InstantNotes est endommagé », exécute puis relance l'app :
       xattr -cr "#{appdir}/InstantNotes.app"
   EOS
-
-  zap trash: [
-    "~/Library/Application Support/com.sohane.instantnotes",
-  ]
 end
