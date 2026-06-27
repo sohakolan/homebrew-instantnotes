@@ -4,7 +4,7 @@ cask "instant-notes" do
 
   url "https://github.com/sohakolan/InstantNotes/releases/download/v#{version}/InstantNotes_#{version}_aarch64.dmg"
   name "InstantNotes"
-  desc "Pense-bête markdown ultra-rapide pour macOS"
+  desc "Pense-bête markdown ultra-rapide"
   homepage "https://github.com/sohakolan/InstantNotes"
 
   depends_on arch: :arm64
