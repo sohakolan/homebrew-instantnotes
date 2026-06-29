@@ -1,6 +1,6 @@
 cask "instant-notes" do
-  version "0.2.0"
-  sha256 "0704558b2df8053891671f45d4566a218bce2237558e62f88e5796c4dca28d4f"
+  version "0.2.1"
+  sha256 "070fdded19f0a367455dc48357d0567a0ed8b1731e40f98f2632c44233d5bde9"
 
   url "https://github.com/sohakolan/InstantNotes/releases/download/v#{version}/InstantNotes_#{version}_aarch64.dmg"
   name "InstantNotes"
